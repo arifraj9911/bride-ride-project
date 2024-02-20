@@ -32,9 +32,9 @@
     </style>
   </head>
   <body>
-    <header class="max-w-screen-xl mx-auto mb-32">
+    <header class="max-w-screen-xl lg:mx-auto">
       <!-- Navbar -->
-      <nav>
+      <nav class="mb-20 lg:mb-32">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -66,7 +66,7 @@
               </ul>
             </div>
             <a class="btn btn-ghost text-xl">
-              <img width="124px" src="images/Logo.png" alt="" />
+              <img class="w-24 lg:w-28" src="images/Logo.png" alt="" />
             </a>
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -84,8 +84,31 @@
           </div>
         </div>
       </nav>
+
+      <!-- Banner Section -->
+      <section
+        class="flex flex-col mx-4 lg:flex-row gap-20 lg:gap-36 justify-between items-center mb-20"
+      >
+        <div>
+          <h1 class="text-4xl lg:text-6xl font-bold">
+            Connecting You to Everywhere
+          </h1>
+          <p class="text-sm lg:text-lg mb-10 mt-7 font-normal">
+            Embark on a seamless and personalized travel experience with BRide.
+            Enjoy hassle-free rides, reliable drivers, and a range of vehicle
+            options tailored to your needs.
+          </p>
+          <button class="btn btn-primary">Download App</button>
+        </div>
+        <div class="w-3/4">
+          <img src="images/banner.png" alt="" />
+        </div>
+      </section>
+      <hr class="w-5/6 lg:w-full mx-auto" />
     </header>
-    <main class="max-w-screen-xl mx-auto"></main>
+    <main class="max-w-screen-xl mx-auto mt-20">
+      <!--  -->
+    </main>
     <footer></footer>
   </body>
 </html>
