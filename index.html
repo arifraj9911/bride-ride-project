@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bride Ride</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.svg" />
 
     <!-- Poppins font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,6 +52,12 @@
         border-radius: 5px;
         font-size: 16px;
         font-weight: 500;
+      }
+      .button-style:hover {
+        background-color: white;
+        color: #0075ff;
+        border: 1px solid #0075ff;
+        transition: 0.2s ease-in all;
       }
     </style>
   </head>
@@ -373,7 +379,7 @@
           class="mt-28 flex flex-col lg:flex-row justify-center mx-3 lg:mx-9 gap-6 lg:relative items-center"
         >
           <div
-            class="bg-white p-9 lg:px-0 pt-20 rounded-3xl flex flex-col border-[1px] border-[#414141] items-center lg:w-5/6 lg:h-[720px]"
+            class="bg-white p-9 lg:px-0 pt-20 rounded-3xl flex flex-col border-[1px] border-[#414141] items-center shadow-2xl lg:w-5/6 lg:h-[720px]"
           >
             <h5 class="text-2xl font-semibold">Commuter</h5>
             <p class="text-sm font-medium mb-9">Ideal for daily commuting</p>
@@ -403,7 +409,7 @@
             </div>
             <div class="lg:absolute lg:bottom-4 w-full lg:w-[30%]">
               <button
-                class="btn btn-primary bg-[#FFFFFF] text-[#0075FF] rounded-2xl rounded-t-none mt-28 w-full text-lg font-semibold border border-[#0075FF]"
+                class="btn btn-primary bg-[#FFFFFF] hover:bg-[#0075FF] text-[#0075FF] hover:text-white rounded-2xl rounded-t-none mt-28 w-full text-lg font-semibold border border-[#0075FF] hover:border-none"
               >
                 Get Started
               </button>
@@ -411,7 +417,7 @@
           </div>
 
           <div
-            class="bg-[#0075FF] text-white p-9 lg:px-0 pt-20 rounded-3xl flex flex-col items-center lg:w-5/6 lg:h-[720px]"
+            class="bg-[#0075FF] text-white p-9 lg:px-0 pt-20 rounded-3xl flex flex-col items-center lg:w-5/6 lg:h-[720px] shadow-2xl"
           >
             <h5 class="text-2xl font-semibold">Casual Rider</h5>
             <p class="text-sm font-medium mb-9">Perfect for occasional rides</p>
@@ -439,14 +445,14 @@
             </div>
             <div class="lg:absolute lg:bottom-4 w-full lg:w-[30%]">
               <button
-                class="btn btn-primary bg-white text-[#0075FF] rounded-2xl rounded-t-none mt-28 w-full text-lg font-semibold border border-[#0075FF]"
+                class="btn btn-primary bg-white hover:bg-[#0075FF] text-[#0075FF] hover:text-white rounded-2xl rounded-t-none mt-28 w-full text-lg font-semibold border border-[#0075FF]"
               >
                 Sign Up Now
               </button>
             </div>
           </div>
           <div
-            class="bg-white p-9 lg:px-0 pt-20 rounded-3xl border-[1px] border-[#414141] flex flex-col items-center lg:w-5/6 lg:h-[720px]"
+            class="bg-white p-9 lg:px-0 pt-20 rounded-3xl border-[1px] border-[#414141] flex flex-col items-center lg:w-5/6 shadow-2xl lg:h-[720px]"
           >
             <h5 class="text-2xl font-semibold">Business</h5>
             <p class="text-sm font-medium mb-9">
@@ -478,7 +484,7 @@
             </div>
             <div class="lg:absolute lg:bottom-4 w-full lg:w-[30%]">
               <button
-                class="btn btn-primary bg-[#0075FF] text-white rounded-2xl rounded-t-none mt-28 w-full text-lg font-semibold border border-[#0075FF]"
+                class="btn btn-primary bg-[#0075FF] hover:bg-white text-white hover:text-[#0075FF] rounded-2xl rounded-t-none mt-28 w-full text-lg font-semibold border border-[#0075FF]"
               >
                 Contact Us
               </button>
@@ -521,12 +527,18 @@
               <a
                 target="_blank"
                 href="https://play.google.com/store/games?hl=en&gl=US&pli=1"
-                ><img src="images/playApp.svg" alt=""
+                ><img
+                  class="hover:scale-75 hover:transition-all hover:ease-in-out hover:delay-150"
+                  src="images/playApp.svg"
+                  alt=""
               /></a>
             </div>
             <div>
               <a target="_blank" href="https://www.apple.com/store">
-                <img src="images/playStore.svg" alt=""
+                <img
+                  class="hover:scale-75 hover:transition-all hover:ease-in-out hover:delay-150"
+                  src="images/playStore.svg"
+                  alt=""
               /></a>
             </div>
           </div>
